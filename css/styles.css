@@ -48,6 +48,13 @@ h2{
     width: 300px;
     margin: 20px;
     padding: 20px;
+    text-align: center;
+}
+
+.detalle-proyectos button{
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .detalle-proyectos img{
@@ -56,8 +63,10 @@ h2{
 }
 
 .detalle-proyectos h3{
+    font-family: 'Raleway';
     font-size: x-large;
     text-align: center;
+    text-decoration: underline;
 }
 
 p{
@@ -78,12 +87,14 @@ nav ul{
     list-style: none;
 }
 
-nav ul li{
+nav ul button{
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px 20px;
     background-color: antiquewhite;
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 a{
@@ -108,8 +119,10 @@ a{
 }
 
 .detalle-datos h3{
-        font-size: x-large;
-        text-align: center;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Raleway';
+    text-decoration: underline;
 }
 
 .detalle-datos li{
@@ -124,13 +137,34 @@ section#info{
 
 section#contacto{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 legend{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway';
     font-size: larger;
+    font-weight: bolder;
+}
+
+fieldset{
+    padding: 10px;
+}
+
+label{
+    padding: 10px;
+}
+
+input{
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#boton-enviar{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 footer{
@@ -140,12 +174,9 @@ footer{
 }
 
 @media only screen and (max-width: 1500px){
-    body{
-        background-color: yellow;
-    }
 
     section#proyectos{
-        height: 150vh;
+        height: 170vh;
         display: flex;
         flex-direction: column;
     }
@@ -160,18 +191,15 @@ footer{
 }
 
 @media only screen and (max-width: 1000px){
-    body{
-        background-color: green;
-    }
 
     section#proyectos{
-        height: 150vh;
+        height: 160vh;
         display: flex;
         flex-direction: column;
     }
     
     section#info{
-        height: 150vh;
+        height: 170vh;
     }
     
     section#contacto{
@@ -183,18 +211,15 @@ footer{
 }
 
 @media only screen and (max-width: 700px){
-    body{
-        background-color: red;
-    }
     
     section#proyectos{
-        height: 270vh;
+        height: 290vh;
         display: flex;
         flex-direction: column;
     }
 
     section#info{
-        height: 180vh;
+        height: 260vh;
         display: flex;
         flex-direction: column;
     }
@@ -215,10 +240,6 @@ footer{
 
 @media only screen and (max-width: 600px){
 
-    body{
-        background-color: blue;
-    }
-
     section#proyectos{
         height: 340vh;
         display: flex;
@@ -226,13 +247,13 @@ footer{
     }
 
     section#info{
-        height: 65vh;
+        height: 150vh;
     }
 
     section#contacto{
-        height: 100vh;
+        height: 140vh;
         display: flex;
         justify-content: center;
         align-items: center;
-    }    
+    }
 }

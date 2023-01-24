@@ -6,21 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final CV</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <a href="#">
-                    <li>Proyectos</li>
-                </a>
-                <a href="#">
-                    <li>Mis datos</li>
-                </a>
-                <a href="#">
-                    <li>Contáctame</li>
-                </a>
+                <button onclick="moverASeccion('proyectos')"> Proyectos </button>
+                <button onclick="moverASeccion('info')"> Mis datos </button>
+                <button onclick="moverASeccion('contacto')"> Contáctame </button>
             </ul>
         </nav>
     </header>
@@ -40,25 +37,25 @@
                     <img src="img/Python-logo-notext.svg.png" alt="python_logo">
                     <h3>BlogcitoPython</h3>
                     <p>Un blog creado enteramente por mi usando Django</p>
-                    <a href="https://github.com/kvin21ok/blog-python" target="_blank">Ir</a>
+                    <button><a href="https://github.com/kvin21ok/blog-python" target="_blank">Ir</a></button>
                 </div>
                 <div class="detalle-proyectos">
                     <img src="img/Unofficial_JavaScript_logo_2.svg.png" alt="javascript_logo">
                     <h3>Calculadora de edad</h3>
                     <p>Aqui quise crear una calculadora que te diga, ingresando tu fecha de nacimiento, cuantos años, meses y dias viviste hasta ahora. Usé HTML, CSS Y JavaScript</p>
-                    <a href="https://github.com/kvin21ok/calculadora-edad" target="_blank">Ir</a>
+                    <button><a href="https://github.com/kvin21ok/calculadora-edad" target="_blank">Ir</a></button>
                 </div>
                 <div class="detalle-proyectos">
-                    <img src="img/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png" id="react-img" alt="react_logo">
+                    <img src="img/descarga-removebg-preview.png" id="react-img" alt="react_logo">
                     <h3>e-Commerce</h3>
                     <p>Usando React quiero hacer mi version de un e-commerce dedicado a la venta de comida ráapida.(Todavía en desarrollo)</p>
-                    <a href="https://github.com/kvin21ok/ecommerce-gastaldello" target="_blank">Ir</a>
+                    <button><a href="https://github.com/kvin21ok/ecommerce-gastaldello" target="_blank">Ir</a></button>
                 </div>
                 <div class="detalle-proyectos">
                     <img src="img/HTML5_logo_and_wordmark.svg.png" alt="html_logo">
                     <h3>Comercio familiar</h3>
                     <p>Mi primer proyecto terminado, fue una entrega final del curso de Desarrollo Web en CoderHouse del año 2021. Aquí uso HTML, SASS y Bootstrap</p>
-                    <a href="https://github.com/kvin21ok/EntregaFinal" target="_blank">Ir</a>
+                    <button><a href="https://github.com/kvin21ok/EntregaFinal" target="_blank">Ir</a></button>
                 </div>
             </div>
         </section>
@@ -97,20 +94,22 @@
         </section>    
 
         <section id="contacto">
+            <h2>Contáctame</h2>
             <form action="#">
                 <fieldset>
                     <legend>Envíame un mensaje</legend>
                         <div>
-                            <label for="nombre">Nombre</label><input type="text" required name="nombre">
-                            <label for="apellido">Apellido</label><input type="text" required name="apellido">
+                            <label for="nombre"></label><input type="text" required name="nombre" placeholder="Nombre">
+                            <label for="apellido"></label><input type="text" required name="apellido" placeholder="Apellido">
                         </div>
                         <div>
-                            <label for="email">Correo electrónico</label>  <input type="email" name="email">     <label for="telefono">Teléfono</label><input type="text" required name="telefono">
+                            <label for="email"></label> <input type="email" name="email" placeholder="Mail">  
+                            <label for="telefono"></label><input type="text" required name="telefono" placeholder="Teléfono">
                         </div>
-                        <div>
-                            <label for="mensaje" name="mensaje"> Escribí tu mensaje y lo leere a la brevedad </label> <textarea name="mensaje" id="" cols="60" rows="10"></textarea>
+                        <div id="texto-mensaje" >
+                            <label for="mensaje" name="mensaje"></label> <textarea name="mensaje" cols="60" rows="10" placeholder="Escribí tu mensaje y lo leere a la brevedad"></textarea>
                         </div>
-                        <div>
+                        <div id="boton-enviar">
                             <input type="submit" value="Enviar">
                         </div>
                 </fieldset>
@@ -122,6 +121,8 @@
     <footer>
 
     </footer>
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>
