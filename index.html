@@ -13,13 +13,13 @@
         <nav>
             <ul>
                 <a href="#">
-                    <li>Inicio</li>
-                </a>
-                <a href="#">
                     <li>Proyectos</li>
                 </a>
                 <a href="#">
                     <li>Mis datos</li>
+                </a>
+                <a href="#">
+                    <li>Contáctame</li>
                 </a>
             </ul>
         </nav>
@@ -37,24 +37,28 @@
             <h2>Mis proyectos</h2>
             <div class="lista-proyectos">
                 <div class="detalle-proyectos">
-                    <h3>nombre de proyecto 1 aca</h3>
-                    <p>descripcion del proyecto</p>
-                    <a href="#">enlace al proyecto aca</a>
+                    <img src="img/Python-logo-notext.svg.png" alt="python_logo">
+                    <h3>BlogcitoPython</h3>
+                    <p>Un blog creado enteramente por mi usando Django</p>
+                    <a href="https://github.com/kvin21ok/blog-python" target="_blank">Ir</a>
                 </div>
                 <div class="detalle-proyectos">
-                    <h3>nombre de proyecto 2 aca</h3>
-                    <p>descripcion del proyecto</p>
-                    <a href="#">enlace al proyecto aca</a>
+                    <img src="img/Unofficial_JavaScript_logo_2.svg.png" alt="javascript_logo">
+                    <h3>Calculadora de edad</h3>
+                    <p>Aqui quise crear una calculadora que te diga, ingresando tu fecha de nacimiento, cuantos años, meses y dias viviste hasta ahora. Usé HTML, CSS Y JavaScript</p>
+                    <a href="https://github.com/kvin21ok/calculadora-edad" target="_blank">Ir</a>
                 </div>
                 <div class="detalle-proyectos">
-                    <h3>nombre de proyecto 3 aca</h3>
-                    <p>descripcion del proyecto</p>
-                    <a href="#">enlace al proyecto aca</a>
+                    <img src="img/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png" id="react-img" alt="react_logo">
+                    <h3>e-Commerce</h3>
+                    <p>Usando React quiero hacer mi version de un e-commerce dedicado a la venta de comida ráapida.(Todavía en desarrollo)</p>
+                    <a href="https://github.com/kvin21ok/ecommerce-gastaldello" target="_blank">Ir</a>
                 </div>
                 <div class="detalle-proyectos">
-                    <h3>nombre de proyecto 4 aca</h3>
-                    <p>descripcion del proyecto</p>
-                    <a href="#">enlace al proyecto aca</a>
+                    <img src="img/HTML5_logo_and_wordmark.svg.png" alt="html_logo">
+                    <h3>Comercio familiar</h3>
+                    <p>Mi primer proyecto terminado, fue una entrega final del curso de Desarrollo Web en CoderHouse del año 2021. Aquí uso HTML, SASS y Bootstrap</p>
+                    <a href="https://github.com/kvin21ok/EntregaFinal" target="_blank">Ir</a>
                 </div>
             </div>
         </section>
@@ -63,44 +67,56 @@
             <h2>Mis datos</h2>
             <div class="lista-datos">
                 <div class="detalle-datos">
-                    <h3>educacion</h3>
-                    <p>lista de educacion</p>
-                </div>
-                <div class="detalle-datos">
-                    <h3>trabajos anteriores</h3>
-                    <p>lista de trabajos anteriores</p>
-                </div>
-                <div class="detalle-datos">
-                    <h3>contacto</h3>
+                    <h3>Educacion</h3>
                     <ul>
-                        <li>edad: 30 años</li>
-                        <li>dirección: 8045 E Little York Rd</li>
-                        <li>teléfono: (622) 452-3137</li>
-                        <li>mail: max.brown@example.com</li>
+                        <li>Maestria en Harvard (2015)</li>
+                        <li>Doctorado en Cs. de la Comunicación (2016)</li>
+                        <li>Posgrado en Desarrollo Web (2020)</li>
+                    </ul>
+                </div>
+                <div class="detalle-datos">
+                    <h3>Trabajos anteriores</h3>
+                    <ul>
+                        <li>Desarrollador Web (actualmente)</li>
+                        <li>Desarrollador SQL (2020 - 2022)</li>
+                        <li>Scrum Master (2017 - 2020)</li>
+                        <li>Profesor de Cátedra (2015 - 2017)</li>
+                        <li>Ayudante de Cátedra(2013 - 2015)</li>
+                    </ul>
+                </div>
+                <div class="detalle-datos">
+                    <h3>Personal</h3>
+                    <ul>
+                        <li>Edad: 30 años</li>
+                        <li>Dirección: 8045 E Little York Rd</li>
+                        <li>Teléfono: (622) 452-3137</li>
+                        <li>Mail: max.brown@example.com</li>
                     </ul>
                 </div>
             </div>
+        </section>    
+
+        <section id="contacto">
+            <form action="#">
+                <fieldset>
+                    <legend>Envíame un mensaje</legend>
+                        <div>
+                            <label for="nombre">Nombre</label><input type="text" required name="nombre">
+                            <label for="apellido">Apellido</label><input type="text" required name="apellido">
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico</label>  <input type="email" name="email">     <label for="telefono">Teléfono</label><input type="text" required name="telefono">
+                        </div>
+                        <div>
+                            <label for="mensaje" name="mensaje"> Escribí tu mensaje y lo leere a la brevedad </label> <textarea name="mensaje" id="" cols="60" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar">
+                        </div>
+                </fieldset>
+            </form>
         </section>
 
-<!--        <section id="contacto">
-            <h2>Contáctame</h2>
-            <form action="" method="post">
-                <div>
-                    <label for="">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div>
-                    <label for="">Mail</label>
-                    <input type="email" name="email" placeholder="Ingrese su mail">
-                </div>
-                <div>
-                    <label for="">Asunto</label>
-                    <textarea name="asunto" id="" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
-        </section> 
-    -->
     </main>
 
     <footer>

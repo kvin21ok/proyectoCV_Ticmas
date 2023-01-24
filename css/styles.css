@@ -33,6 +33,7 @@ h1{
 h2{
     font-size: 2rem;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .lista-proyectos{
@@ -46,10 +47,21 @@ h2{
     border-radius: 5px;
     width: 300px;
     margin: 20px;
+    padding: 20px;
 }
 
 .detalle-proyectos img{
     width: 100%;
+    padding: 2rem;
+}
+
+.detalle-proyectos h3{
+    font-size: x-large;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
 }
 
 header{
@@ -76,10 +88,151 @@ nav ul li{
 
 a{
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.lista-datos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.detalle-datos{
+    border: 5px solid darkgreen;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    padding: 25px;
+}
+
+.detalle-datos h3{
+        font-size: x-large;
+        text-align: center;
+}
+
+.detalle-datos li{
+    font-size: 20px;
+}
+section#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
 
 footer{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: lightseagreen;
+}
+
+@media only screen and (max-width: 1500px){
+    body{
+        background-color: yellow;
+    }
+
+    section#proyectos{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#contacto{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px){
+    body{
+        background-color: green;
+    }
+
+    section#proyectos{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section#info{
+        height: 150vh;
+    }
+    
+    section#contacto{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    body{
+        background-color: red;
+    }
+    
+    section#proyectos{
+        height: 270vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#info{
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista-datos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    section#contacto{        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }    
+}
+
+@media only screen and (max-width: 600px){
+
+    body{
+        background-color: blue;
+    }
+
+    section#proyectos{
+        height: 340vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#info{
+        height: 65vh;
+    }
+
+    section#contacto{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
 }
