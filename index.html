@@ -99,18 +99,18 @@
                 <fieldset>
                     <legend>Envíame un mensaje</legend>
                         <div>
-                            <label for="nombre"></label><input type="text" required name="nombre" placeholder="Nombre">
-                            <label for="apellido"></label><input type="text" required name="apellido" placeholder="Apellido">
+                            <label for="nombre"></label><input type="text" required name="nombre" placeholder="Nombre" id="nombre">
+                            <label for="apellido"></label><input type="text" required name="apellido" placeholder="Apellido" id="apellido">
                         </div>
                         <div>
-                            <label for="email"></label> <input type="email" name="email" placeholder="Mail">  
-                            <label for="telefono"></label><input type="text" required name="telefono" placeholder="Teléfono">
+                            <label for="email"></label> <input type="email" required name="email" name="email" placeholder="Mail" id="mail">  
+                            <label for="telefono"></label><input type="text" required name="telefono" placeholder="Teléfono" id="telefono">
                         </div>
                         <div id="texto-mensaje" >
-                            <label for="mensaje" name="mensaje"></label> <textarea name="mensaje" cols="60" rows="10" placeholder="Escribí tu mensaje y lo leere a la brevedad"></textarea>
+                            <label for="mensaje" name="mensaje"></label> <textarea required name="mensaje" cols="60" rows="10" placeholder="Escribí tu mensaje y lo leere a la brevedad" id="mensaje"></textarea>
                         </div>
                         <div id="boton-enviar">
-                            <input type="submit" value="Enviar">
+                            <input type="submit" value="Enviar" onclick="validarFormulario()">
                         </div>
                 </fieldset>
             </form>
